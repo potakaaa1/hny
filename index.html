@@ -10,11 +10,25 @@
   </head>
   <body>
     <main>
+        <audio src="/bad.mp3" autoplay></audio>
         <p class="message">
-            goodmorning dal! first of all, you may see this message not so genuine kay ayha pa nako gihimo na nalain naka :(( pero i'm writing this deep within my heart and i hope na you'll understand what i'?m trying to tell you here. i'm very very guilty of not making an effort for you this new year. although it is true that it has been busy for us (fam) these past few days but still not a good reason to not give something to you. i'm vv sorry love, you don't deserve this kind of treatment. i'll promise to make it up to you this year and i hopeee that we'll make it again at the end of this year. i thought that quality time was enough and you'd understand given our situation, pero i was wrong and you're valid for expecting something since it's a special day and i really want you to be happy and enjoying the new year. i hope that we'll get to spend the rest of the year together again, just like how we spent the last year. you may not see it from the outside but i was really enjoying reading your letter and i love how you surprise me with letters full of meaningful words. i promiseee i'll give you something to open up on 25 and 1/25 this year, just like how u do your tradition. thank you so much for keeping up with me last year jii. thank you for staying with me. thank you for loving and accepting me even my imperfections. i could never find someone that could love me like you do. you made my 2023 more colorful and you made me happier than i could ever be. thank you love. HAPPY NEW YEARR and I LOVEEE YOUU TO DAL AND BACK 💛💛
+            goodmorning dal! first of all, you may see this message not so genuine kay ayha pa nako gihimo na nalain naka :(( pero i'm writing this deep within my heart and i hope na you'll understand what i'm trying to tell you here. i'm very very guilty of not making an effort for you this new year. although it is true that it has been busy for us (fam) these past few days but still not a good reason to not give something to you. i'm vv sorry love, you don't deserve this kind of treatment. i'll promise to make it up to you this year and i hopeee that we'll make it again at the end of this year. i thought that quality time was enough and you'd understand given our situation, pero i was wrong and you're valid for expecting something since it's a special day and i really want you to be happy and enjoying the new year. i hope that we'll get to spend the rest of the year together again, just like how we spent the last year. you may not see it from the outside but i was really enjoying reading your letter and i love how you surprise me with letters full of meaningful words. i promiseee i'll give you something to open up on 25 and 1/25 this year, just like how u do your tradition. thank you so much for keeping up with me last year jii. thank you for staying with me. thank you for loving and accepting me even my imperfections. i could never find someone that could love me like you do. you made my 2023 more colorful and you made me happier than i could ever be. thank you love. HAPPY NEW YEARR and I LOVEEE YOUU TO DAL AND BACK 💛💛
         </p>
 
     </main>
-	<script src="script.js"></script>
+	<script>
+        window.onload = setInterval(GameLoop, 1000 / 10); //10fps
+
+        let myAudio = new Audio();
+
+        myAudio.src = "/bad.mp3";
+
+        function Gameloop() {
+            myAudio.play();
+            if (myAudio.paused == true) {
+                myAudio.play();
+            }
+        }
+    </script>
   </body>
 </html>
