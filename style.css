@@ -1,0 +1,17 @@
+body {
+    background-color: #FBF9F1;
+
+}
+
+.message {
+    font-family: "DM Sans";
+    text-align: center;
+    justify-content: center;
+    margin: 70px auto;
+    width: 65%;
+    display: flex;
+    color: #3D3B40;
+    line-height: 2;
+    
+    
+}
